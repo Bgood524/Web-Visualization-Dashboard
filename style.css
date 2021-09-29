@@ -12,18 +12,18 @@ html {
   /* Visual */
   background-color: #EDEDED;
  }
- /* Media query for body */
- @media only screen and (max-width: 767px) {
-  /* Set background color to white on small screens */
-  body {
-    /* Visual */
-    background-color: #fff;
-  }
- }
+ 
  /* ----DEFAULT ELEMENT STYLING END---- */
  /* ----NAV START---- */
  .navbar-custom {
   background-color: #fff;
+ }
+
+ #logo {
+  background-color: #4AAAA5;
+  color: #fff;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
  }
  
  .navbar-right-custom {
@@ -38,29 +38,7 @@ html {
  .navbar-default .navbar-nav > li > a:hover {
   color: #4AAAA5;
  }
- /* Media query for nav */
- @media only screen and (max-width: 767px) {
-  .navbar-header {
-    background-color: #4AAAA5;
-  }
-  #logo {
-    width: 100%;
-    /* Box-model */
-    height: 60px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    /* Positioning */
-    margin-left: 0;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    /* Typography */
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    /* Visual */
-    background: #4AAAA5
-    opacity: 0.7;;
-  }
- }
+ 
  /* -----NAV END---- */
  /* ----DESCRIPTION START---- */
  .description-header {
@@ -68,7 +46,6 @@ html {
   margin-bottom: 33px;
   font-family: Georgia, Times, "Times New Roman", serif;
   /* Typography */
-  font-size: 32px;
   font-weight: bold;
   color: #4AAAA5;
  }
@@ -100,16 +77,7 @@ html {
   margin-top: 20px;
   margin-right: 20px;
  }
- /* Description content media query */
- @media only screen and (max-width: 767px) {
-  /* override default class styling for positioning/padding */
-  .description-content {
-    /* Box-model */
-    padding: 0;
-    /* Positioning */
-    margin-top: 0;
-  }
- }
+ 
  /* ----DESCRIPTION END---- */
  /* ----IMAGE NAV START---- */
  #imageNav-area {
