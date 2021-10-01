@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Max Temperature</title>
+  <title>Latitude Visualization Dashboard</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -48,10 +48,11 @@
       <div class="col-md-8">
           <div style = padding:10px>
             <article class="description-content">
-            <h1 class="description-header"> Max Temperature</h1>
+            <h1 class="description-header"> Summary: Latitude vs X</h1>
               <hr class="description-hr"/>
-              <img src="../Assets/City Latitude_vs_Max Temp.png" alt="" id="description-image"/>
-              <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the sourther hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year the data was gathered.</p>
+              <img src="assets/City Latitude_vs_Max Temp.png" alt="" id="description-image"/>
+              <p>This webpage contains an analysis of weather data from cities all over the world, and takes a deep dive on how distance from the equator affects various aspects of the weather. The data was pulled from the OpenWeather API, and contains over 500 cities.</p>
+              <p>After cleaning the json data from the API call, we assembled plots to analyze how the latitude affects temperature, cloudiness, wind speed, and humidity. This site contains the source data and the visualization for each factor analyzed.</p>
             </article>
           </div>  
       </div>
@@ -64,12 +65,12 @@
                   <div class="row" style = "padding-top:10px">
                       <div class= "col-md-6">
                           <a href="#"> 
-                            <img src= "../Assets/City Latitude_vs_Max Temp.png" alt ="Latitude vs Max Temp" class="imageNav-photo"/>
+                            <img src= "assets/City Latitude_vs_Max Temp.png" alt ="Latitue vs Max Temp" class="imageNav-photo"/>
                           </a> 
                       </div>
                       <div class= "col-md-6">
                         <a href="#">
-                          <img src= "../Assets/City Latitude_vs_Cloudiness.png" alt ="Latitude vs Cloudiness" class="imageNav-photo"/> 
+                          <img src= "assets/City Latitude_vs_Cloudiness.png" alt ="Latitue vs Cloudiness" class="imageNav-photo"/> 
                         </a>
                     </div>
                     
@@ -77,12 +78,12 @@
                   <div class="row" style = "padding-top:10px">
                     <div class= "col-md-6">
                       <a href="#">
-                        <img src= "../Assets/City Latitude_vs_Humidity.png" alt ="Latitude vs Humidity" class="imageNav-photo"/>
+                        <img src= "assets/City Latitude_vs_Humidity.png" alt ="Latitue vs Humidity" class="imageNav-photo"/>
                       </a> 
                     </div>
                     <div class= "col-md-6">
                       <a href="#">
-                        <img src= "../Assets/City Latitude_vs_Wind Speed.png" alt ="Latitude vs Wind Speed" class="imageNav-photo"/>
+                        <img src= "assets/City Latitude_vs_Wind Speed.png" alt ="Latitue vs Wind Speed" class="imageNav-photo"/>
                       </a> 
                   </div>
                 </div>
