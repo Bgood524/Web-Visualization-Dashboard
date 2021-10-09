@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Latitude Visualization Dashboard</title>
+  <title>Max Temperature</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand logo" id="logo" href="#">
+    <a class="navbar-brand logo" id="logo" href="../index.html">
       <h1>
         Latitude
           </h1>
@@ -25,17 +25,17 @@
             Plots
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="Visualizations/max_temp.html">Max Temperature</a>
-            <a class="dropdown-item" href="#">Humidity</a>
-            <a class="dropdown-item" href="#">Cloudiness</a>
-            <a class="dropdown-item" href="#">Wind Speed</a>
+            <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
           </div>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="Visualizations/data.html">Data</a>
+          <a class="nav-link" href="data.html">Data</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Comparison</a>
+          <a class="nav-link" href="comparison.html">Comparison</a>
         </li>
       </ul>
     </div>
@@ -48,11 +48,10 @@
       <div class="col-md-8">
           <div style = padding:10px>
             <article class="description-content">
-            <h1 class="description-header"> Summary: Latitude vs X</h1>
+            <h1 class="description-header"> Humidity</h1>
               <hr class="description-hr"/>
-              <img src="assets/City Latitude_vs_Max Temp.png" alt="" id="description-image"/>
-              <p>This webpage contains an analysis of weather data from cities all over the world, and takes a deep dive on how distance from the equator affects various aspects of the weather. The data was pulled from the OpenWeather API, and contains over 500 cities.</p>
-              <p>After cleaning the json data from the API call, we assembled plots to analyze how the latitude affects temperature, cloudiness, wind speed, and humidity. This site contains the source data and the visualization for each factor analyzed.</p>
+              <img src="../Assets/City Latitude_vs_Humidity.png" alt=""/>
+              <p>While there are no clear general trends among the data overall, there are clear trends in specific areas of the globe. There are very few cities in tropical climates (near the equator) and near the Arctic which have lower levels of humidity.</p>
             </article>
           </div>  
       </div>
@@ -62,28 +61,28 @@
             <h2 class="description-header">Visualizations</h2>
               <hr class="description-hr">
                 <div class = 'container'>
-                  <div class="row" style = "padding-top:10px">
+                  <div class="row">
                       <div class= "col-md-6">
-                          <a href="#"> 
-                            <img src= "assets/City Latitude_vs_Max Temp.png" alt ="Latitue vs Max Temp" class="imageNav-photo"/>
+                          <a href="max_temp.html">
+                            <img src= "../Assets/City Latitude_vs_Max Temp.png" alt ="Latitude vs Max Temp" class="imageNav-photo"/>
                           </a> 
                       </div>
                       <div class= "col-md-6">
-                        <a href="#">
-                          <img src= "assets/City Latitude_vs_Cloudiness.png" alt ="Latitue vs Cloudiness" class="imageNav-photo"/> 
+                        <a href="cloudiness.html">
+                          <img src= "../Assets/City Latitude_vs_Cloudiness.png" alt ="Latitude vs Cloudiness" class="imageNav-photo"/> 
                         </a>
                     </div>
                     
                   </div>
                   <div class="row" style = "padding-top:10px">
                     <div class= "col-md-6">
-                      <a href="#">
-                        <img src= "assets/City Latitude_vs_Humidity.png" alt ="Latitue vs Humidity" class="imageNav-photo"/>
+                      <a href="humidity.html">
+                        <img src= "../Assets/City Latitude_vs_Humidity.png" alt ="Latitude vs Humidity" class="imageNav-photo" style= "border: 2px solid #4AAAA5"/>
                       </a> 
                     </div>
                     <div class= "col-md-6">
-                      <a href="#">
-                        <img src= "assets/City Latitude_vs_Wind Speed.png" alt ="Latitue vs Wind Speed" class="imageNav-photo"/>
+                      <a href="wind_speed.html">
+                        <img src= "../Assets/City Latitude_vs_Wind Speed.png" alt ="Latitude vs Wind Speed" class="imageNav-photo"/>
                       </a> 
                   </div>
                 </div>
@@ -100,6 +99,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
-
+<footer class = "footer two-toned-footer-color"> </footer>
 </html>
+  
   
